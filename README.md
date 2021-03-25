@@ -7,3 +7,19 @@ Supported operating systems
 
 - Windows server 2016, 2019 
 - Linux
+
+
+# Building
+
+Install Visual Studio & cmake
+
+- mkdir build
+- cd build
+- cmake ..
+
+# Deps
+
+- win32 openssl
+- libsrtp2
+
+- libusrsctp not required, Pure C sctp implementation already added.
