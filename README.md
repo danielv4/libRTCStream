@@ -1,25 +1,37 @@
 # libeva
-Embedded-Rtc Hyper-V Application
 
-Microsoft Windows "x86/x64" shared library for webrtc connections between Hyper-V instances.
+Libeva is a free and open-source cross platform WebRTC library, providing web browsers and mobile applications with real-time communication.
 
 Supported operating systems
 
-- Windows server 2016, 2019 
-- Linux
-
-
-# Building
-
-Install Visual Studio & cmake
-
-- mkdir build
-- cd build
-- cmake ..
+- Linux Debian 9, Debian 10, Ubuntu 16.04 and Ubuntu 18.04
+- Windows 8, 8.1, 10, Windows Server 2012, Windows Server 2016 and Windows Server 2019
 
 # Deps
 
-- win32 openssl
-- libsrtp2
+```
+git clone https://github.com/cisco/libsrtp
+cd libsrtp
+mkdir build
+cd build
+cmake ..
 
-- libusrsctp not required, Pure C sctp implementation already added.
+git clone https://github.com/janbar/openssl-cmake
+cd openssl-cmake
+mkdir build
+cd build
+cmake ..
+```
+
+# Building libeva
+
+Install Visual Studio & cmake
+
+```
+wget "https://github.com/Kitware/CMake/releases/download/v3.18.0-rc3/cmake-3.18.0-rc3-win64-x64.msi"
+cd libeva
+mkdir build
+cd build
+cmake ..
+```
+
